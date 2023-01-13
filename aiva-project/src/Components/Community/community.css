@@ -1,0 +1,81 @@
+
+.card {
+    padding: 50px 25px;
+    width: 300px;
+    background-color: #333 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap:20px;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card--title {
+    color: white;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    font-size: 1.7rem;
+}
+.card .recommandation {
+    color: white;
+    max-width: 300px;
+}
+
+.card--button {
+    
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.card--button:hover{
+    
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    
+}
+
+
+.card-primary-enter {
+    
+    height: 0px;
+    opacity: 0;
+}
+.card-primary-enter-active {
+    height: 100px;
+    transition: all 500ms linear;
+    color: white;
+    opacity: 1;
+}
+.card-primary-exit {
+    height: 100px;
+    color: white;
+    opacity: 1;
+}
+
+.card-primary-exit-active {
+    height: 0px;
+    transition: all 500ms linear;
+    opacity: 0;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+

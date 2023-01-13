@@ -1,0 +1,141 @@
+.edit-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #314755 0%, #26a0df  51%, #314755  100%);
+    padding: 25px 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.edit-profile .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.edit-profile .top-section img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.edit-profile .top-section .right {
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.edit-profile .top-section p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.edit-profile .new-data {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-data .username-label,.email-label,.phone-number-label {
+
+    display: flex;
+    color: white;
+    gap:50px;
+    align-items: center;
+}
+
+.new-data .username-label,.email-label,.phone-number-label label {
+
+    align-self: flex-end;
+}
+
+.new-data input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+}
+
+.new-data .submit {
+    width: 200px;
+    height: 50px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.edit-profile .change-picture {
+    color: rgba(255,255,0,1);
+    font-size: 0.9rem;
+}
+
+.edit-profile .picture-dialog {
+    width: 300px;
+    height: 300px;
+}
+.edit-profile .change-picture:hover {
+    cursor: pointer;
+}
+
+
+.dialog-title {
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    
+}
+.fa-x {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(0,0,0,0.6);
+    font-size: 17px;
+}
+
+.fa-x:hover {
+   
+    cursor: pointer;
+    color: rgba(0,0,0,0.8);   
+}
+
+.dialog-content {
+    gap:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.save {
+    background-color: rgba(255,198,0,1);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background-size: 200% auto;
+    color: black;
+    font-weight: 400;
+    font-size: 1.1rem;      
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.save:hover {
+    box-shadow: 0 0 20px #eee;
+    filter: brightness(1.2);
+    font-size: 1.3rem;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: url("https://i.pinimg.com/originals/49/14/34/491434fd338ab5ad18229900b69f3760.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.app--main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-basis: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar hr {
+    height: 25px;
+    background-color: lightgray;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo .title{
+    color: white;
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px #F8F8F8;
+    text-shadow: 0px 1px 4px #23430C;
+    letter-spacing: 3px;
+}
+.logo img {
+    width: 120px;
+    height: 100px;
+    position: relative;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding:40px 30px ;
+    font-size: 1.5rem;
+    align-items: center;
+    min-height: 100%;
+    /* background-color: white; */
+}
+
+.navbar .start,.end{
+    display: flex;
+    gap:25px;
+    list-style: none;
+    align-items: center;
+    color: white;
+    
+}
+.navbar li .text-link{
+    
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar li .text-link::before {
+    content: "";
+    left:0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 2px;
+    background-color: rgb(45, 194, 189);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.navbar li .text-link:hover,
+.navbar li .text-link:focus {
+    color: rgb(45, 194, 189);
+}
+.navbar li .text-link:hover::before,
+.navbar li .text-link:focus::before{
+    
+    transform: scaleX(1);
+}
+
+.navbar .end {
+    margin-right: 25px;
+}
+
+main .title {
+    color: white;
+    font-size: 100px;
+}
+.text-link {
+    text-decoration: none;
+    color: white;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+}
+.profile img:hover {
+    cursor: pointer;
+}
+
+.profile .profile--active:hover{
+    cursor:auto;
+}
+
+.profile--design {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    rotate: 45deg;
+    margin-top: 10px;
+    right: 100px;
+}
+
+.profile .profile--list {
+    right: 75px;
+    position: absolute;
+    height: auto;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: white;
+    gap:15px;
+    padding: 15px 20px;
+    border-radius:10px ;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 3px 8px;
+    margin-top: 17px;
+}
+.profile .profile--list hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+}
+.profile .profile--list i {
+    margin-right: 10px;
+}
+
+.profile .profile--list li {
+    list-style: none;
+    z-index: 1050;
+}
+.profile .profile--list li .profile--text{
+    color: black;
+    font-size: 1.3rem;
+    list-style: none;
+    z-index: 1050;
+}
+
+.profile .profile--list li .profile--text:hover {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.4rem;
+    border-bottom: solid 1px black;
+}
+
+.test {
+    color: white;
+    font-size: 100px;
+}

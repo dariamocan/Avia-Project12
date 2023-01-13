@@ -1,0 +1,96 @@
+.shop {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop .title {
+    font-size: 2.5rem;
+}
+
+.shop .description {
+    color:rgba(255,255,255,0.6);
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+}
+
+.shop--main {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:250px;
+} 
+
+.shop--product {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right,#28313B,#485461);
+    max-width: 325px;
+    padding: 25px;
+    border-radius: 10px;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 15px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 15px 45px;
+}
+
+.shop--product img {
+    width: 180px;
+    height: 220px;
+    align-self: center;
+}
+.shop--product h2 {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.rating {
+    width: 100%;
+    justify-self: left;
+    display: flex;
+    gap:15px;
+}
+
+.rating .fa-star,.fa-star-half-stroke{
+
+    color: rgba(248,243,53,1);
+    margin: 1px;
+}
+
+.rating .rating-text {
+    color: white;
+}
+
+.rating-text span {
+    color: rgba(255,255,255,0.6);
+    margin-left: 4px;
+}
+
+.shop--product .status {
+    color: lightgray;
+    font-weight: 700;
+}
+
+.shop--product a button {
+    background-color: aqua;
+    border: none;
+    align-self: center;
+    width: 100%;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 300ms ease-in-out;
+}
+.shop--product a button:hover {
+    box-shadow: 0 0 20px #eee;
+    font-size: 1.3rem;
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+.shop--product .bottom-part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop--product .bottom-part h3 {
+    color: red;
+}

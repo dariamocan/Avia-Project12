@@ -1,0 +1,40 @@
+.report--container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease-in-out 0s;
+}
+
+.report--problem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: linear-gradient(to right, #314755 0%, #26a0df  51%, #314755  100%);
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    gap: 25px;
+}
+
+
+.report--problem .report--title {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.report--problem textarea {
+    padding: 5px;
+    font-size: 1.1rem;
+    resize: vertical;
+    width: 400px;
+    height: 200px;
+}

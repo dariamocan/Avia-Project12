@@ -1,0 +1,300 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    position: relative;
+}
+
+
+.profile-header {
+    display: flex;
+    gap: 200px;
+    align-items: center;
+}
+
+.profile-header .profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: auto ;
+}
+
+.profile-header .left-section {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.profile-header .left-section .top {
+    display: flex;
+    gap: 50px;
+}
+
+.profile-header .left-section .bottom {
+    display: flex;
+    gap: 50px;
+    font-size: 1.2rem;
+}
+
+.profile-header p {
+    color: white;
+}
+
+.profile-header .left-section .top .username {
+    
+    font-size: 2.1rem;
+}
+.profile-header .left-section .top .edit-profile-button {
+    
+
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.profile-header .left-section .top .edit-profile-button:hover {
+    
+    cursor: pointer;
+    /* border: solid 1px white;
+    background-color: rgba(0,0,0,0.1);
+    color: white; */
+}
+
+
+.profile-header .left-section .bottom .followers:hover, .following:hover {
+    cursor: pointer;
+}
+
+.profile-header .left-section .bottom .followers:active, .following:active{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.profile-main .group,.energy{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 50px;
+}
+
+.profile-main .energy h3 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.profile-main .group button {
+    background-color: rgba(255,198,0,1);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background-size: 200% auto;
+    color: black;
+    font-weight: 400;
+    font-size: 1.1rem;      
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.profile-main .group button:hover {
+    box-shadow: 0 0 20px #eee;
+    filter: brightness(1.2);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.profile-main .group button:active {
+    background-color: rgba(255,198,0,0.5);
+    filter: brightness(1);
+    box-shadow: none;
+}
+
+.profile-main .energy button {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    background-size: 200% auto;
+    color: black;
+    font-weight: 400;
+    font-size: 1.1rem;      
+    border-radius: 10px;
+    display: block;
+    border: none;
+}
+
+.profile-main .energy button:hover {
+    box-shadow: 0 0 20px #eee;
+    filter: brightness(1.2);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.profile-main .energy button:active {
+    background-color: rgba(255,255,255,.5);
+    filter: brightness(1);
+    box-shadow: none;
+}
+
+.create-post {
+    position: fixed;
+    z-index: 1040;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    gap:15px;
+    
+}
+.upload-photo hr {
+    width: 104%;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 1px;
+    background-color: rgba(0,0,0,0.6);
+    border: none;
+}
+.black-screen {
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.create-post .close-white {
+    color: white;
+    opacity: 0.8;
+}
+
+.create-post .close-white:hover {
+    opacity: 1;
+}
+
+.create-post .close-white:active {
+    opacity: 0.6;
+}
+
+.create-post .select-photo {
+   border: 0;
+   position: absolute;
+   top:-46px;
+   right: 10px;
+   color: rgb(0, 149, 246);
+   background: none;
+   font-size: 1rem;
+}
+.create-post .select-photo:hover {
+    cursor: pointer;
+    color: rgb(0,55,107);
+}
+
+.create-post .select-photo:active {
+    
+    color: rgb(0,150,200);
+    cursor: pointer;
+}
+
+.title-discard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-discard h2 {
+    font-size: 1.5rem;
+}
+
+.title-discard h4 {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.6);
+}
+.discard-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.discard-button {
+    background-color: red;
+}
+
+.selected-image {
+    width: 600px;
+    height: 600px;
+    border-radius: 8px;
+}
+.upload-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.photo-selected {
+    flex-direction: row;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    font-size: 1.5rem;
+    top: -50px;
+    left: 0;
+}
+.fa-arrow-left:hover {
+    cursor: pointer;
+}
+
+.vl {
+    height: 630px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    width: 1px;
+    background-color: rgba(0,0,0,0.6);
+    margin-right: 10px;
+}
+
+.post-description {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.post-description textarea {
+    resize: none;
+    height: 300px;
+    padding: 5px 10px ;
+    border: none;
+    outline: none;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+}
